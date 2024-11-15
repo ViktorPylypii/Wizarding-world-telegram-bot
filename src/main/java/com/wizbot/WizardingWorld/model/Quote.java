@@ -27,4 +27,5 @@ public class Quote {
     private Character character;
     private String quote;
     private String source;
+    private String quote_ukr;
 }

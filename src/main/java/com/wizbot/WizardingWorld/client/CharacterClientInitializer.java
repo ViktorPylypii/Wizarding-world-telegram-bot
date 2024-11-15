@@ -13,11 +13,10 @@ import java.util.List;
 public class CharacterClientInitializer {
     private final Logger logger;
     private final CharacterClient characterClient;
-    private boolean done = false;
+
     @PostConstruct
     private void initialize(){
         logger.info("starter client initializer");
         List<CharacterApiDto> allCharacters = characterClient.getAllCharacters();
-        done = true;
     }
 }
