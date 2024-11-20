@@ -16,8 +16,8 @@ public class QuoteInitializerClient {
     private final Logger logger;
     private final QuoteClient quoteClient;
 
-    @PostConstruct
-    private void initialize() {
+
+    public void initialize() {
         List<QuoteApiDto> quotes = quoteClient.getQuotes();
         System.out.println("a");
     }
