@@ -19,7 +19,7 @@ import org.springframework.stereotype.Component;
 @RequiredArgsConstructor
 public class TranslatorUtil {
     private static final String GOOGLE_TRANSLATE_URL = "https://translate.googleapis.com/translate_a/single";
-    private static final String TARGET_LANGUAGE = "en";
+    private static final String TARGET_LANGUAGE = "uk";
     private final Logger logger;
 
     public String translate(String text) {

@@ -18,6 +18,7 @@ public class Character {
     private Long id;
     private String character_name;
     private String character_ukr_name;
+    @Lob
     private String character_info;
     private String born;
     private String died;

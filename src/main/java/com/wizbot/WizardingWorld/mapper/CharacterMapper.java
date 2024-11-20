@@ -15,7 +15,6 @@ import java.util.List;
 @Mapper(config = MapperConfig.class)
 public interface CharacterMapper {
     Character toModel( String character_name,
-                       String character_ukr_name,
                        String character_info,
                        String born, String died,
                        String gender,
