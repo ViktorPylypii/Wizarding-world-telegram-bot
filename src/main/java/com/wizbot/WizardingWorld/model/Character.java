@@ -25,6 +25,7 @@ public class Character {
     private String gender;
     private String height;
     private String house;
+    @Lob
     private String image;
     private String marital_status;
     private String nationality;

@@ -6,6 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.Lob;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
@@ -22,9 +23,10 @@ public class Quote {
     @EqualsAndHashCode.Exclude
     private Long id;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "character_id", nullable = false)
+    @JoinColumn(name = "character_id")
     @EqualsAndHashCode.Exclude
     private Character character;
+    @Lob
     private String quote;
     private String source;
     private String quote_ukr;

@@ -21,7 +21,6 @@ public class CharacterClientInitializer {
     private final Logger logger;
     private final CharacterClient characterClient;
     private final CharacterMapper mapper;
-    private final TranslatorUtil translatorUtil;
     private final CharacterRepository characterRepository;
 
 
